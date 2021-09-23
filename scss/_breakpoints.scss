@@ -1,0 +1,36 @@
+@mixin md {
+    @media md {
+        min-width: $breakpoint-md;
+        max-width: $breakpoint-md-max-width;
+    }
+
+}
+
+@mixin lg {
+    @media lg {
+        min-width: $breakpoint-lg;
+        max-width: $breakpoint-lg-max-width;
+    }
+
+}
+
+@mixin xl {
+    @media xl {
+        min-width: $breakpoint-xl;
+        max-width: $breakpoint-xl-max-width;
+    }
+}
+
+@mixin xxl{
+    @media xxl {
+        min-width: $breakpoint-xxl;
+        max-width: $breakpoint-xxl-max-width; 
+    }
+}
+
+@mixin all-sizes {
+    @include md;
+    @include lg;
+    @include xl;
+    @include xxl;
+}

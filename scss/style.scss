@@ -1,4 +1,15 @@
 @import "_variables.scss";
-
+@import "_breakpoints.scss";
+@import "_utilities.scss";
 @import "layouts/mobile";
 @import "layouts/tablet";
+
+body {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+.header-section {
+    background-color: $navbar-background;
+}
+
