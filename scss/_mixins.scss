@@ -1,3 +1,5 @@
+// Screensize breakpoints
+
 @mixin md {
     @media md {
         min-width: $breakpoint-md;
@@ -33,4 +35,11 @@
     @include lg;
     @include xl;
     @include xxl;
+}
+
+
+@mixin text-headline{
+    color: $primary-dark;
+    font-family: $font-secondary;
+    font-weight: 700;
 }

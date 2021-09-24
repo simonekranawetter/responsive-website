@@ -1,4 +1,5 @@
 .d-grid {display: grid;}
+.d-flex {display: flex;}
 
 .container {
     max-width: 100%;
@@ -16,35 +17,54 @@
     font-weight: 700;
     color: $button-font;
     height:auto;
-    padding: 15px;
-    border: none;
-    border-radius: 0.7rem;
+    padding: 14px 26px;
+    border: 1px solid transparent;
+    border-radius: 5px;
 
+}
+
+.btn-border {
+    background: transparent;
+    font-size: 0.9444444444444444rem;
+    font-family: $font-primary;
+    color: $primary-dark;
+    color: $button-border-font;
+    height:auto;
+    padding: 14px 26px;
+    border: 1px solid $secondary-highlight;
+    border-radius: 5px;
 }
 
 .border {
     border: 1px solid black;
 }
-// something here doesn't translate. it displays grid but not the rest
+
 #navbar {
+    padding-top: 30px;
+    padding-bottom:30px;
     .nav {
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 3fr;
         align-items: center;
-            .nav-brand{
-                display:flex;
-            }
             .nav-links ul{
                 list-style: none;
                 display:flex;
+                justify-content: flex-end;
                 padding: 0;
+                a {
+                    align-self: center;
+                }
                 li {
                     display:inline-block;
                     padding: 0 1rem;
-                    font-size: 1.0625rem;
+                    font-size: 0.9444444444444444rem;
+                    font-family: $font-primary;
+                    color: $primary-dark;
+                    font-weight:500;
+                    margin-left: 1.5rem;
+                    margin-right:1,5rem;
+                    justify-content:flex-end;
+                    align-self:center;   
                 }
-            }
-            .nav-search {
-                display:flex;
             }
     }
 }
