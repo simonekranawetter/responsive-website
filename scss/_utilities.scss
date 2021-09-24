@@ -20,7 +20,7 @@
     padding: 14px 26px;
     border: 1px solid transparent;
     border-radius: 5px;
-
+    cursor:pointer;
 }
 
 .btn-border {
@@ -33,6 +33,7 @@
     padding: 14px 26px;
     border: 1px solid $secondary-highlight;
     border-radius: 5px;
+    cursor:pointer;
 }
 
 .border {
@@ -72,5 +73,93 @@
                     align-self:center;   
                 }
             }
+    }
+}
+
+#home{
+    // figure out how to get the background in
+    // background-image: url(images/background-shape.svg);
+
+    .container{
+        max-width: 1600px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+    }
+    .home-content {
+        h1 {
+        @include text-headline;
+        font-size: 3rem;
+        line-height: 3.778rem;
+        }
+        p{@include text-p}
+    }
+    .home-image{
+        display:inline-block;
+        width:100%;
+        height:auto;
+        position: relative;
+        right: -12rem;
+    }
+}
+
+#features{
+    .container{
+        max-width: 1600px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        // align-items: center;
+        gap: 4rem 6rem;
+    }
+    .features-info{
+        grid-row: 1/span2;
+        h1{@include text-headline;}
+        p{@include text-p;}
+    }
+    .features-icons{
+        padding-right: 8rem;
+        h1{
+            @include text-headline;
+            font-size:1.222rem;
+        }
+        p{@include text-p;}
+    }
+}
+//TODO: CONTINUE FIXING THIS!
+#pages{
+    .pages-image{grid-area: image;}
+    .pages-header{grid-area: header;} 
+    .pages-bulletpoints{grid-area: bulletpoints;}
+    .number{grid-area: number;}   
+    .container{
+        max-width: 1600px;
+        // grid-template-columns: 2fr 1fr 1fr;
+        // grid-template-rows: auto auto auto auto;
+        grid-template-areas: 'image header header'
+                             'image number bulletpoints'
+                             'image number bulletpoints'
+                             'image number bulletpoints';
+    }
+
+    .pages-header{
+        h1 {
+            @include text-headline;
+            font-size: 3rem;
+            line-height: 3.778rem;
+        }
+    }
+    .pages-bulletpoints{
+        h1 {
+            @include text-headline;
+            font-family: $font-secondary;
+            font-weight: 600;
+        }
+        p{@include text-p;}
+        }
+    .number{
+        font-family: $font-secondary;
+        font-weight: 700;
+        font-size: 3.333rem;
+        color: $primary-highlight;
     }
 }

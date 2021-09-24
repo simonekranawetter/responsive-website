@@ -49,6 +49,7 @@
   padding: 14px 26px;
   border: 1px solid transparent;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn-border {
@@ -61,6 +62,7 @@
   padding: 14px 26px;
   border: 1px solid #FF6803;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .border {
@@ -103,6 +105,115 @@
   align-self: center;
 }
 
+#home .container {
+  max-width: 1600px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+}
+#home .home-content h1 {
+  color: #252525;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.667rem;
+  line-height: 3.333rem;
+  padding-bottom: 1.667rem;
+  font-size: 3rem;
+  line-height: 3.778rem;
+}
+#home .home-content p {
+  padding-bottom: 1.667rem;
+}
+#home .home-image {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  right: -12rem;
+}
+
+#features .container {
+  max-width: 1600px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 4rem 6rem;
+}
+#features .features-info {
+  grid-row: 1/span2;
+}
+#features .features-info h1 {
+  color: #252525;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.667rem;
+  line-height: 3.333rem;
+  padding-bottom: 1.667rem;
+}
+#features .features-info p {
+  padding-bottom: 1.667rem;
+}
+#features .features-icons {
+  padding-right: 8rem;
+}
+#features .features-icons h1 {
+  color: #252525;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.667rem;
+  line-height: 3.333rem;
+  padding-bottom: 1.667rem;
+  font-size: 1.222rem;
+}
+#features .features-icons p {
+  padding-bottom: 1.667rem;
+}
+
+#pages .pages-image {
+  grid-area: image;
+}
+#pages .pages-header {
+  grid-area: header;
+}
+#pages .pages-bulletpoints {
+  grid-area: bulletpoints;
+}
+#pages .number {
+  grid-area: number;
+}
+#pages .container {
+  max-width: 1600px;
+  grid-template-areas: "image header header" "image number bulletpoints" "image number bulletpoints" "image number bulletpoints";
+}
+#pages .pages-header h1 {
+  color: #252525;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.667rem;
+  line-height: 3.333rem;
+  padding-bottom: 1.667rem;
+  font-size: 3rem;
+  line-height: 3.778rem;
+}
+#pages .pages-bulletpoints h1 {
+  color: #252525;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.667rem;
+  line-height: 3.333rem;
+  padding-bottom: 1.667rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+#pages .pages-bulletpoints p {
+  padding-bottom: 1.667rem;
+}
+#pages .number {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3.333rem;
+  color: #F23779;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -110,5 +221,5 @@
   font-size: 18px;
   font-weight: 400;
   color: #57647C;
-  line-height: 1.6666666667rem;
+  line-height: 1.667rem;
 }/*# sourceMappingURL=style.css.map */
