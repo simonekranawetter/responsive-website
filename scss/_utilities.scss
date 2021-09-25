@@ -116,7 +116,7 @@
         p{@include text-p;}
     }
     .features-icons{
-        padding-right: 8rem;
+        width:260px;
         h1{
             @include text-headline;
             font-size:1.222rem;
@@ -131,11 +131,16 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, auto);
     }
+    .pages-image{
+        align-self:center;
+    }
+    .pages-content{width:436px;}
     .pages-header{
         h1 {
             @include text-headline;
             font-size: 3rem;
             line-height: 3.778rem;
+            // padding-right:17rem;
         }
     }
     .pages-bulletpoints{
@@ -144,12 +149,12 @@
             font-family: $font-secondary;
             font-weight: 600;
             font-size: 1.333rem;
-            padding-left:8rem;
+            padding-left:6rem;
         }
         p {
             @include text-p;
-            padding-left: 8rem;
-            padding-right: 8rem;
+            padding-left: 6rem;
+            // padding-right: 17rem;
             padding-bottom:3.333rem;
         }
         .number{
@@ -157,8 +162,10 @@
             font-weight: 700;
             font-size: 3.333rem;
             color: $primary-highlight;
-            padding: 3.333rem;
-            padding-left: 3rem;
+            display: inline-block;
+            position: relative;
+            top: 4rem;
+            // left:3rem;
         }
     }
 

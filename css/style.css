@@ -153,7 +153,7 @@
   padding-bottom: 1.667rem;
 }
 #features .features-icons {
-  padding-right: 8rem;
+  width: 260px;
 }
 #features .features-icons h1 {
   color: #252525;
@@ -172,6 +172,12 @@
   max-width: 1600px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, auto);
+}
+#pages .pages-image {
+  align-self: center;
+}
+#pages .pages-content {
+  width: 436px;
 }
 #pages .pages-header h1 {
   color: #252525;
@@ -193,12 +199,11 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.333rem;
-  padding-left: 8rem;
+  padding-left: 6rem;
 }
 #pages .pages-bulletpoints p {
   padding-bottom: 1.667rem;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 6rem;
   padding-bottom: 3.333rem;
 }
 #pages .pages-bulletpoints .number {
@@ -206,8 +211,9 @@
   font-weight: 700;
   font-size: 3.333rem;
   color: #F23779;
-  padding: 3.333rem;
-  padding-left: 3rem;
+  display: inline-block;
+  position: relative;
+  top: 4rem;
 }
 
 * {
