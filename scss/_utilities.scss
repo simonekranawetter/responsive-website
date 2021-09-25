@@ -108,7 +108,6 @@
         max-width: 1600px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
-        // align-items: center;
         gap: 4rem 6rem;
     }
     .features-info{
@@ -126,21 +125,12 @@
     }
 }
 //TODO: CONTINUE FIXING THIS!
-#pages{
-    .pages-image{grid-area: image;}
-    .pages-header{grid-area: header;} 
-    .pages-bulletpoints{grid-area: bulletpoints;}
-    .number{grid-area: number;}   
+#pages{ 
     .container{
         max-width: 1600px;
-        // grid-template-columns: 2fr 1fr 1fr;
-        // grid-template-rows: auto auto auto auto;
-        grid-template-areas: 'image header header'
-                             'image number bulletpoints'
-                             'image number bulletpoints'
-                             'image number bulletpoints';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
     }
-
     .pages-header{
         h1 {
             @include text-headline;
@@ -153,13 +143,23 @@
             @include text-headline;
             font-family: $font-secondary;
             font-weight: 600;
+            font-size: 1.333rem;
+            padding-left:8rem;
         }
-        p{@include text-p;}
+        p {
+            @include text-p;
+            padding-left: 8rem;
+            padding-right: 8rem;
+            padding-bottom:3.333rem;
         }
-    .number{
-        font-family: $font-secondary;
-        font-weight: 700;
-        font-size: 3.333rem;
-        color: $primary-highlight;
+        .number{
+            font-family: $font-secondary;
+            font-weight: 700;
+            font-size: 3.333rem;
+            color: $primary-highlight;
+            padding: 3.333rem;
+            padding-left: 3rem;
+        }
     }
+
 }

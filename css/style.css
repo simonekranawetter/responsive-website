@@ -168,21 +168,10 @@
   padding-bottom: 1.667rem;
 }
 
-#pages .pages-image {
-  grid-area: image;
-}
-#pages .pages-header {
-  grid-area: header;
-}
-#pages .pages-bulletpoints {
-  grid-area: bulletpoints;
-}
-#pages .number {
-  grid-area: number;
-}
 #pages .container {
   max-width: 1600px;
-  grid-template-areas: "image header header" "image number bulletpoints" "image number bulletpoints" "image number bulletpoints";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
 }
 #pages .pages-header h1 {
   color: #252525;
@@ -203,15 +192,22 @@
   padding-bottom: 1.667rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 1.333rem;
+  padding-left: 8rem;
 }
 #pages .pages-bulletpoints p {
   padding-bottom: 1.667rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 3.333rem;
 }
-#pages .number {
+#pages .pages-bulletpoints .number {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 3.333rem;
   color: #F23779;
+  padding: 3.333rem;
+  padding-left: 3rem;
 }
 
 * {
