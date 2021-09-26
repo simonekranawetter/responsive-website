@@ -50,3 +50,10 @@
 @mixin text-p{
     padding-bottom: 1.667rem;
 }
+
+@mixin menu-anchor{
+    display: block;
+    height: 5rem; /*same height as header*/
+    margin-top: -5rem; /*same height as header*/
+    visibility: hidden;
+}

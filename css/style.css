@@ -139,16 +139,25 @@
   margin-left: -25rem;
 }
 
-#features .container {
+#features {
+  display: block;
+  height: 5rem;
+  /*same height as header*/
+  margin-top: -5rem;
+  /*same height as header*/
+  visibility: hidden;
+}
+
+.features .container {
   max-width: 1170px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 4rem 6rem;
 }
-#features .features-info {
+.features .features-info {
   grid-row: 1/span2;
 }
-#features .features-info h1 {
+.features .features-info h1 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -156,13 +165,13 @@
   line-height: 3.333rem;
   padding-bottom: 1.667rem;
 }
-#features .features-info p {
+.features .features-info p {
   padding-bottom: 1.667rem;
 }
-#features .features-icons {
+.features .features-icons {
   width: 260px;
 }
-#features .features-icons h1 {
+.features .features-icons h1 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -171,22 +180,33 @@
   padding-bottom: 1.667rem;
   font-size: 1.222rem;
 }
-#features .features-icons p {
+.features .features-icons p {
   padding-bottom: 1.667rem;
 }
 
-#pages .container {
+#pages {
+  display: block;
+  height: 5rem;
+  /*same height as header*/
+  margin-top: -5rem;
+  /*same height as header*/
+  visibility: hidden;
+}
+
+.pages .container {
   max-width: 1170px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, auto);
 }
-#pages .pages-image {
+.pages .pages-image {
   align-self: center;
 }
-#pages .pages-content {
-  width: 436px;
+.pages .pages-image img {
+  position: relative;
+  left: -8rem;
+  margin-right: -5rem;
 }
-#pages .pages-header h1 {
+.pages .pages-header h1 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -196,7 +216,7 @@
   font-size: 3rem;
   line-height: 3.778rem;
 }
-#pages .pages-bulletpoints h1 {
+.pages .pages-bulletpoints h1 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -208,12 +228,12 @@
   font-size: 1.333rem;
   padding-left: 6rem;
 }
-#pages .pages-bulletpoints p {
+.pages .pages-bulletpoints p {
   padding-bottom: 1.667rem;
   padding-left: 6rem;
-  padding-bottom: 3.333rem;
+  padding-bottom: 2.333rem;
 }
-#pages .pages-bulletpoints .number {
+.pages .pages-bulletpoints .number {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 3.333rem;
@@ -223,16 +243,16 @@
   top: 4rem;
 }
 
-#statistics .container {
+.statistics .container {
   max-width: 1170px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
 }
-#statistics .stats-info {
+.statistics .stats-info {
   grid-column: 2/span 2;
   grid-row: 1/span 1;
 }
-#statistics .stats-info h1 {
+.statistics .stats-info h1 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -240,28 +260,29 @@
   line-height: 3.333rem;
   padding-bottom: 1.667rem;
   text-align: center;
+  padding-top: 6rem;
 }
-#statistics .stats-info p {
+.statistics .stats-info p {
   padding-bottom: 1.667rem;
   text-align: center;
 }
-#statistics .stats-numbers {
+.statistics .stats-numbers {
   grid-column: 1/span 4;
   grid-row: 2/span 1;
   justify-content: space-around;
 }
-#statistics .stats-numbers .number {
+.statistics .stats-numbers .number {
   display: inline-block;
   padding: 4rem 4rem;
 }
-#statistics .stats-numbers .number h1 {
+.statistics .stats-numbers .number h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2.333rem;
   color: #F23779;
   padding-bottom: 1.667rem;
 }
-#statistics .box {
+.statistics .box {
   grid-column: 2/span 2;
   grid-row: 3/span 1;
   padding-left: 1rem;
@@ -269,35 +290,44 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  z-index: 1;
 }
-#statistics .box .contact-us h2 {
+.statistics .box .contact-us h2 {
   font-family: "Roboto", sans-serif;
   color: #252525;
   font-weight: 600;
   font-size: 1.167rem;
 }
-#statistics .box .contact-us p {
+.statistics .box .contact-us p {
   padding-bottom: 1.667rem;
   padding-bottom: 0;
 }
-#statistics .stats-background {
+.statistics .stats-background {
   grid-column: 1/span 4;
   grid-row: 2/span 2;
   justify-self: center;
+  z-index: -1;
 }
 
-#blog .container {
-  max-width: 1170px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
+#blog {
+  display: block;
+  height: 5rem;
+  /*same height as header*/
+  margin-top: -5rem;
+  /*same height as header*/
+  visibility: hidden;
 }
-#blog .blog-info {
-  grid-column: 2/span 2;
-  grid-row: 1/span 1;
+
+.blog .container {
+  max-width: 1170px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem 2rem;
+}
+.blog .blog-info {
+  grid-column-start: span 3;
   padding: 2rem 6rem;
 }
-#blog .blog-info h1 {
+.blog .blog-info h1 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -305,32 +335,35 @@
   line-height: 3.333rem;
   padding-bottom: 1.667rem;
   text-align: center;
+  padding-top: 6rem;
 }
-#blog .blog-info p {
+.blog .blog-info p {
   padding-bottom: 1.667rem;
   text-align: center;
   padding-left: 3rem;
   padding-right: 3rem;
 }
-#blog .blog-entry {
-  grid-column: 1/span 3;
+.blog .blog-entry {
   grid-row: 2/span 1;
-  justify-content: space-around;
+  max-width: 300px;
 }
-#blog .blog-entry article h1 {
+.blog .blog-entry h1 {
   font-family: "Roboto", sans-serif;
   color: #252525;
   font-weight: 700;
   font-size: 1.222rem;
 }
-#blog .blog-entry article p {
+.blog .blog-entry p {
   padding-bottom: 1.667rem;
 }
-#blog .blog-entry article h2 {
+.blog .blog-entry h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.778rem;
   color: #FF6803;
+}
+.blog .blog-entry img {
+  max-width: 300px;
 }
 
 * {

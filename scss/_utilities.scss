@@ -40,6 +40,7 @@
     border: 1px solid black;
 }
 
+
 #navbar {
     .container{
         max-width: 1170px;
@@ -111,7 +112,8 @@
     }
 }
 
-#features{
+#features{ @include menu-anchor; }
+.features{
     .container{
         max-width: 1170px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -132,30 +134,26 @@
         p{@include text-p;}
     }
 }
-//TODO: CONTINUE FIXING THIS!
-#pages{ 
+#pages{@include menu-anchor;}
+.pages{ 
     .container{
         max-width: 1170px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, auto);
     }
     .pages-image{
-        // display:block;
-        // width:100%;
-        // height:auto;
-        // position: relative;
-        // //TODO figure this out
-        // left: -15rem;
-        // margin-right:-12rem;
         align-self:center;
+        img{
+            position: relative;
+            left: -8rem;
+            margin-right:-5rem
+        }
     }
-    .pages-content{width:436px;}
     .pages-header{
         h1 {
             @include text-headline;
             font-size: 3rem;
             line-height: 3.778rem;
-            // padding-right:17rem;
         }
     }
     .pages-bulletpoints{
@@ -169,8 +167,7 @@
         p {
             @include text-p;
             padding-left: 6rem;
-            // padding-right: 17rem;
-            padding-bottom:3.333rem;
+            padding-bottom:2.333rem;
         }
         .number{
             font-family: $font-secondary;
@@ -185,8 +182,7 @@
     }
 
 }
-
-#statistics{
+.statistics{
     .container{
         max-width: 1170px;
         grid-template-columns: repeat(4, 1fr);
@@ -195,10 +191,10 @@
     .stats-info{
         grid-column: 2/span 2;
         grid-row: 1/span 1;
-        // padding: 2rem 6rem;
         h1{
             @include text-headline;
             text-align: center;
+            padding-top: 6rem;
         }
         p{
             @include text-p;
@@ -231,9 +227,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: white;
-        z-index: 1;
         .contact-us{
-            // align-content: center;
             h2{
             font-family: $font-primary;
             color: $primary-dark;
@@ -244,29 +238,30 @@
                 @include text-p;
                 padding-bottom: 0;
             }
-
         }
     }
     .stats-background{
         grid-column: 1/span 4;
         grid-row: 2/span 2;
         justify-self: center;
+        z-index: -1;
     }
 }
-
-#blog{
+#blog{@include menu-anchor;}
+.blog{
     .container{
         max-width: 1170px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, auto);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, auto);
+        gap: 1rem 2rem;
     }
     .blog-info{
-        grid-column: 2/span 2;
-        grid-row: 1/span 1;
+        grid-column-start: span 3;
         padding: 2rem 6rem;
         h1{
             @include text-headline;
             text-align: center;
+            padding-top: 6rem;
         }
         p{
             @include text-p;
@@ -276,25 +271,26 @@
         }
     }
     .blog-entry{
-        grid-column: 1/span 3;
         grid-row: 2/span 1;
-        justify-content: space-around;
-        article{
-            h1{
-                font-family: $font-primary;
-                color: $primary-dark;
-                font-weight: 700;
-                font-size: 1.222rem;
-            }
-            p{
-                @include text-p;
-            }
-            h2{
-                font-family: $font-secondary;
-                font-weight: 400;
-                font-size: 0.778rem;
-                color:$secondary-highlight;
-            }
-        }
+        max-width: 300px;
+                h1{
+                    font-family: $font-primary;
+                    color: $primary-dark;
+                    font-weight: 700;
+                    font-size: 1.222rem;
+                }
+                p{
+                    @include text-p;
+                }
+                h2{
+                    font-family: $font-secondary;
+                    font-weight: 400;
+                    font-size: 0.778rem;
+                    color:$secondary-highlight;
+                }
+                img{
+                    max-width: 300px;
+                }
     }
+    
 }
