@@ -101,8 +101,8 @@
         height:auto;
         position: relative;
         //TODO figure this out
-        right: -15rem;
-        margin-left:-20rem;
+        right: -20rem;
+        margin-left:-25rem;
     }
 }
 
@@ -130,11 +130,18 @@
 //TODO: CONTINUE FIXING THIS!
 #pages{ 
     .container{
-        // max-width: 1300px;
+        max-width: 1170px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, auto);
     }
     .pages-image{
+        display:block;
+        width:100%;
+        height:auto;
+        position: relative;
+        //TODO figure this out
+        left: -15rem;
+        margin-right:-15rem;
         align-self:center;
     }
     .pages-content{width:436px;}
@@ -172,4 +179,37 @@
         }
     }
 
+}
+
+#statistics{
+    .container{
+        max-width: 1170px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    .stats-info{
+        grid-column: 1/span 4;
+        grid-row: 1/span 1;
+        h1{
+            @include text-headline;
+        }
+        p{
+            @include text-p;
+        }
+    }
+    .stats-numbers{
+        grid-column: 1/span 4;
+        justify-content: space-around;
+        .number{
+            display:inline-block;
+            padding: 4rem 4rem;
+            h1{
+                font-family: $font-secondary;
+                font-weight: 600;
+                font-size: 2.333rem;
+                color: $primary-highlight;
+                padding-bottom: 1.667rem;
+            }
+        }
+    }
 }
