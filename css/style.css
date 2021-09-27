@@ -40,7 +40,7 @@
 }
 
 .btn {
-  background: linear-gradient(90deg, #f23779 30%, #ff6803 53%, #ffa62e 100%);
+  background: linear-gradient(90deg, #f23779 43%, #ff6803 88%, #ffa62e 100%);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #FFFFFF;
@@ -49,6 +49,13 @@
   border: 1px solid transparent;
   border-radius: 5px;
   cursor: pointer;
+  opacity: 85%;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #f23779 28%, #ff6803 62%, #ffa62e 99%);
+  border: 1px solid #FF6803;
+  opacity: 100%;
+  transition: 0.1s ease-in;
 }
 
 .btn-border {
@@ -62,6 +69,11 @@
   border: 1px solid #FF6803;
   border-radius: 5px;
   cursor: pointer;
+}
+.btn-border:hover {
+  color: #FF6803;
+  font-weight: 700;
+  transition: 0.4s ease-in;
 }
 
 .border {
@@ -285,11 +297,12 @@
 .statistics .box {
   grid-column: 2/span 2;
   grid-row: 3/span 1;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 2rem;
+  border-radius: 5px;
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .statistics .box .contact-us h2 {
   font-family: "Roboto", sans-serif;
@@ -319,13 +332,15 @@
 
 .blog .container {
   max-width: 1170px;
-  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, auto);
-  gap: 1rem 2rem;
+  grid-template-rows: repeat(3, auto);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 0;
 }
 .blog .blog-info {
-  grid-column-start: span 3;
-  padding: 2rem 6rem;
+  grid-column: 1/span 3;
+  align-content: center;
 }
 .blog .blog-info h1 {
   color: #252525;
@@ -335,7 +350,7 @@
   line-height: 3.333rem;
   padding-bottom: 1.667rem;
   text-align: center;
-  padding-top: 6rem;
+  align-items: center;
 }
 .blog .blog-info p {
   padding-bottom: 1.667rem;
@@ -343,27 +358,35 @@
   padding-left: 3rem;
   padding-right: 3rem;
 }
-.blog .blog-entry {
+.blog .blog-image {
   grid-row: 2/span 1;
-  max-width: 300px;
+  padding: none;
+}
+.blog .blog-entry {
+  grid-row: 3/span 1;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .blog .blog-entry h1 {
   font-family: "Roboto", sans-serif;
   color: #252525;
   font-weight: 700;
   font-size: 1.222rem;
+  padding: 1rem 2rem;
 }
 .blog .blog-entry p {
   padding-bottom: 1.667rem;
+  padding: 1rem 2rem;
 }
 .blog .blog-entry h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.778rem;
   color: #FF6803;
+  padding: 1rem 2rem;
 }
-.blog .blog-entry img {
-  max-width: 300px;
+.blog .blog-entry .btn {
+  margin: 1rem 2rem;
 }
 
 * {

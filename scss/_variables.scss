@@ -12,7 +12,8 @@ $secondary-highlight: #FF6803;
 $navbar-background: #F8F9FE;
 $button-font: #FFFFFF;
 $button-border-font:$primary-dark;
-$button-background: linear-gradient(90deg, rgba(242,55,121,1) 30%, rgba(255,104,3,1) 53%, rgba(255,166,46,1) 100%);
+$button-background: linear-gradient(90deg, rgba(242,55,121,1) 43%, rgba(255,104,3,1) 88%, rgba(255,166,46,1) 100%);
+$button-background-hover: linear-gradient(90deg, rgba(242,55,121,1) 28%, rgba(255,104,3,1) 62%, rgba(255,166,46,1) 99%); 
 
 //Breakpoints
 $breakpoint-md: 768px;

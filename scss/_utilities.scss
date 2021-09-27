@@ -21,6 +21,13 @@
     border: 1px solid transparent;
     border-radius: 5px;
     cursor:pointer;
+    opacity: 85%;
+    &:hover{
+        background: $button-background-hover;
+        border: 1px solid $secondary-highlight;
+        opacity: 100%;
+        transition: 0.1s ease-in;
+    }
 }
 
 .btn-border {
@@ -34,6 +41,11 @@
     border: 1px solid $secondary-highlight;
     border-radius: 5px;
     cursor:pointer;
+    &:hover{
+        color: $secondary-highlight;
+        font-weight:700;
+        transition: 0.4s ease-in;
+    }
 }
 
 .border {
@@ -222,11 +234,14 @@
     .box{
         grid-column: 2/span 2;
         grid-row: 3/ span 1;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        // padding-left: 1rem;
+        // padding-right: 1rem;
+        padding:2rem;
+        border-radius: 5px;
         justify-content: space-between;
         align-items: center;
         background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         .contact-us{
             h2{
             font-family: $font-primary;
@@ -251,17 +266,18 @@
 .blog{
     .container{
         max-width: 1170px;
-        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(3, auto);
-        gap: 1rem 2rem;
+        grid-template-rows: repeat(3, auto);
+        column-gap: 2rem;
+        row-gap: 0;
     }
     .blog-info{
-        grid-column-start: span 3;
-        padding: 2rem 6rem;
+        grid-column: 1/span 3;
+        align-content: center;
         h1{
             @include text-headline;
             text-align: center;
-            padding-top: 6rem;
+            align-items: center;
         }
         p{
             @include text-p;
@@ -270,26 +286,36 @@
             padding-right: 3rem;
         }
     }
-    .blog-entry{
+
+    .blog-image{
         grid-row: 2/span 1;
-        max-width: 300px;
+        padding: none;
+    }
+
+    .blog-entry{
+        grid-row: 3/span 1;
+        justify-content: space-around;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 h1{
                     font-family: $font-primary;
                     color: $primary-dark;
                     font-weight: 700;
                     font-size: 1.222rem;
+                    padding: 1rem 2rem;
                 }
                 p{
                     @include text-p;
+                    padding: 1rem 2rem;
                 }
                 h2{
                     font-family: $font-secondary;
                     font-weight: 400;
                     font-size: 0.778rem;
                     color:$secondary-highlight;
+                    padding: 1rem 2rem;
                 }
-                img{
-                    max-width: 300px;
+                .btn{
+                    margin: 1rem 2rem;
                 }
     }
     
