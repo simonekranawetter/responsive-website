@@ -89,6 +89,7 @@
                     align-self:center;
                 }
             }
+            .hamburger{display: none;}
     }
 }
 
@@ -279,7 +280,7 @@
     .blog-image{
         grid-row: 2/span 1;
         width:100%;
-        height: 100%;
+        height: auto;
         background-color: $secondary-dark;
     }
 
