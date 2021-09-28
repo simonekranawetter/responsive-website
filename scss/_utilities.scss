@@ -2,7 +2,6 @@
 .d-flex {display: flex;}
 
 .container {
-    // max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
@@ -204,8 +203,6 @@
         p{
             @include text-p;
             text-align: center;
-            // padding-left: 3rem;
-            // padding-right: 3rem;
         }
     }
     .stats-numbers{
@@ -278,7 +275,7 @@
             padding-right: 3rem;
         }
     }
-
+    //TODO :fix image and remove background color
     .blog-image{
         grid-row: 2/span 1;
         width:100%;
