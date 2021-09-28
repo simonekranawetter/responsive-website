@@ -94,16 +94,13 @@
 }
 
 #home{
-    // figure out how to get the background in
     background-image:url("../images/background_shape.svg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: auto;
     .container{
-        max-width: 1170px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows:auto;
-        // justify-items: space-between;
         align-items: center;
     }
     .home-content {
@@ -127,7 +124,6 @@
 #features{ @include menu-anchor; }
 .features{
     .container{
-        max-width: 1170px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
         gap: 4rem 6rem;
@@ -149,7 +145,6 @@
 #pages{@include menu-anchor;}
 .pages{ 
     .container{
-        max-width: 1170px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, auto);
     }
@@ -189,14 +184,12 @@
             display: inline-block;
             position: relative;
             top: 4rem;
-            // left:3rem;
         }
     }
 
 }
 .statistics{
     .container{
-        max-width: 1170px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, auto);
     }
@@ -234,14 +227,12 @@
     .box{
         grid-column: 2/span 2;
         grid-row: 3/ span 1;
-        // padding-left: 1rem;
-        // padding-right: 1rem;
         padding:2rem;
         border-radius: 5px;
         justify-content: space-between;
         align-items: center;
         background-color: white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0px 0px 40px 8px #f1f1f1 , 0px 0px 40px 8px #f1f1f1 ;
         .contact-us{
             h2{
             font-family: $font-primary;
@@ -265,7 +256,6 @@
 #blog{@include menu-anchor;}
 .blog{
     .container{
-        max-width: 1170px;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
         column-gap: 2rem;
@@ -274,10 +264,12 @@
     .blog-info{
         grid-column: 1/span 3;
         align-content: center;
+        padding-bottom: 6rem;
         h1{
             @include text-headline;
             text-align: center;
             align-items: center;
+            padding-top: 12rem;
         }
         p{
             @include text-p;
@@ -289,13 +281,16 @@
 
     .blog-image{
         grid-row: 2/span 1;
-        padding: none;
+        width:100%;
+        height: 100%;
+        background-color: $secondary-dark;
     }
 
     .blog-entry{
         grid-row: 3/span 1;
         justify-content: space-around;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow:0px 0px 40px 8px #f1f1f1 , 0px 0px 40px 8px #f1f1f1 ;
+        z-index: -1;
                 h1{
                     font-family: $font-primary;
                     color: $primary-dark;
