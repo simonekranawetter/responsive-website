@@ -1,4 +1,4 @@
-@media (max-width:$breakpoint-md ){
+@media only screen and (max-width:$breakpoint-md ){
     .nav{
         grid-template-columns: 1fr 1fr;
         .nav-links{display:none;}
