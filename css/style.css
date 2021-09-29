@@ -37,7 +37,7 @@
 
 .btn-border {
   background: transparent;
-  font-size: 0.9444444444rem;
+  font-size: 0.944rem;
   font-family: "Roboto", sans-serif;
   color: #252525;
   color: #252525;
@@ -58,7 +58,6 @@
 }
 
 #navbar .container {
-  max-width: 1170px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   position: fixed;
@@ -133,9 +132,7 @@
 #features {
   display: block;
   height: 5rem;
-  /*same height as header*/
   margin-top: -5rem;
-  /*same height as header*/
   visibility: hidden;
 }
 
@@ -177,9 +174,7 @@
 #pages {
   display: block;
   height: 5rem;
-  /*same height as header*/
   margin-top: -5rem;
-  /*same height as header*/
   visibility: hidden;
 }
 
@@ -301,9 +296,7 @@
 #blog {
   display: block;
   height: 5rem;
-  /*same height as header*/
   margin-top: -5rem;
-  /*same height as header*/
   visibility: hidden;
 }
 
@@ -337,6 +330,7 @@
 }
 .blog .blog-image {
   grid-row: 2/span 1;
+  z-index: 1;
 }
 .blog .blog-image img {
   width: 100%;
@@ -346,7 +340,6 @@
   grid-row: 3/span 1;
   justify-content: space-around;
   box-shadow: 0px 0px 40px 8px #f1f1f1, 0px 0px 40px 8px #f1f1f1;
-  z-index: -1;
 }
 .blog .blog-entry h1 {
   font-family: "Roboto", sans-serif;

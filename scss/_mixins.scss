@@ -1,43 +1,3 @@
-// Screensize breakpoints
-
-@mixin md {
-    @media md {
-        min-width: $breakpoint-md;
-        max-width: $breakpoint-md-max-width;
-    }
-
-}
-
-@mixin lg {
-    @media lg {
-        min-width: $breakpoint-lg;
-        max-width: $breakpoint-lg-max-width;
-    }
-
-}
-
-@mixin xl {
-    @media xl {
-        min-width: $breakpoint-xl;
-        max-width: $breakpoint-xl-max-width;
-    }
-}
-
-@mixin xxl{
-    @media xxl {
-        min-width: $breakpoint-xxl;
-        max-width: $breakpoint-xxl-max-width; 
-    }
-}
-
-@mixin all-sizes {
-    @include md;
-    @include lg;
-    @include xl;
-    @include xxl;
-}
-
-
 @mixin text-headline{
     color: $primary-dark;
     font-family: $font-secondary;
@@ -53,7 +13,7 @@
 
 @mixin menu-anchor{
     display: block;
-    height: 5rem; /*same height as header*/
-    margin-top: -5rem; /*same height as header*/
+    height: 5rem;
+    margin-top: -5rem; 
     visibility: hidden;
 }

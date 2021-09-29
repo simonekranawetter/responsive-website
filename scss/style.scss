@@ -1,8 +1,8 @@
-@import "_variables.scss";
-@import "_mixins.scss";
-@import "_utilities.scss";
-@import "layouts/mobile";
-@import "layouts/tablet";
+@import "./variables";
+@import "./mixins";
+@import "./utilities";
+@import "./layouts/mobile";
+@import "./layouts/tablet";
 
 * {
     box-sizing: border-box;
