@@ -81,14 +81,15 @@
 }
 #navbar .nav .nav-links ul a {
   align-self: center;
-}
-#navbar .nav .nav-links ul li {
-  display: inline-block;
-  padding: 0 1rem;
+  text-decoration: none;
   font-size: 0.944rem;
   font-family: "Roboto", sans-serif;
   color: #252525;
   font-weight: 500;
+}
+#navbar .nav .nav-links ul li {
+  display: inline-block;
+  padding: 0 1rem;
   justify-content: flex-end;
   align-self: center;
 }
