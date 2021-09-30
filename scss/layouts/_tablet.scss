@@ -1,4 +1,4 @@
-@media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl){
+@media only screen and (min-width: $breakpoint-md-max-width) and (max-width: $breakpoint-xl){
     .nav{
         grid-template-columns: 1fr 1fr;
         .nav-links{display:none;}
@@ -14,7 +14,6 @@
      #home {
         background-image: none;
         padding-top: 6rem;
-        padding-bottom: 3rem;
         .container{
             grid-template-columns: 1fr;
             text-align: center;
@@ -30,7 +29,7 @@
 
     .features{
         .container{
-            text-align: center;
+            text-align:center;
             display:block;
         }
         .features-info{
@@ -53,8 +52,7 @@
         }
         .pages-image {display:none;}
         .pages-header{
-            h1{ 
-                padding-top: 6rem;
+            h1{
                 font-size: 2rem;
                 line-height: 2.5rem;
                 text-align: center;
@@ -78,7 +76,6 @@
             display:block;
         }
         .stats-info{
-            padding-top: 3rem;
             padding-bottom: 3rem;
             h1{ 
                 font-size: 2rem;
@@ -111,5 +108,4 @@
             margin: 3rem;
         }
     }
-
 }
