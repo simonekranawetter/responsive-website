@@ -141,7 +141,7 @@
 .features .features-info {
   grid-row: 1/span2;
 }
-.features .features-info h1 {
+.features .features-info h2 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -155,7 +155,7 @@
 .features .features-icons {
   width: 260px;
 }
-.features .features-icons h1 {
+.features .features-icons h3 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -187,7 +187,7 @@
   left: -8rem;
   margin-right: -5rem;
 }
-.pages .pages-header h1 {
+.pages .pages-header h2 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -197,7 +197,7 @@
   font-size: 3rem;
   line-height: 3.778rem;
 }
-.pages .pages-bulletpoints h1 {
+.pages .pages-bulletpoints h3 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -233,7 +233,7 @@
   grid-column: 2/span 2;
   grid-row: 1/span 1;
 }
-.statistics .stats-info h1 {
+.statistics .stats-info h2 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -256,7 +256,7 @@
   display: inline-block;
   padding: 4rem 4rem;
 }
-.statistics .stats-numbers .number h1 {
+.statistics .stats-numbers .number b {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2.333rem;
@@ -273,7 +273,7 @@
   background-color: white;
   box-shadow: 0px 0px 40px 8px #f1f1f1, 0px 0px 40px 8px #f1f1f1;
 }
-.statistics .box .contact-us h2 {
+.statistics .box .contact-us b {
   font-family: "Roboto", sans-serif;
   color: #252525;
   font-weight: 600;
@@ -309,7 +309,7 @@
   align-content: center;
   padding-bottom: 6rem;
 }
-.blog .blog-info h1 {
+.blog .blog-info h2 {
   color: #252525;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -339,7 +339,7 @@
   box-shadow: 0px 0px 40px 8px #f1f1f1, 0px 0px 40px 8px #f1f1f1;
   margin-bottom: 3rem;
 }
-.blog .blog-entry h1 {
+.blog .blog-entry h3 {
   font-family: "Roboto", sans-serif;
   color: #252525;
   font-weight: 700;
@@ -350,7 +350,7 @@
   padding-bottom: 1.667rem;
   padding: 0.5rem 2rem;
 }
-.blog .blog-entry h2 {
+.blog .blog-entry aside {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.778rem;
@@ -398,7 +398,7 @@
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .features .features-info h1 {
+  .features .features-info h2 {
     padding-top: 6rem;
     font-size: 2rem;
     line-height: 2.5rem;
@@ -413,13 +413,13 @@
   .pages .pages-image {
     display: none;
   }
-  .pages .pages-header h1 {
+  .pages .pages-header h2 {
     padding-top: 6rem;
     font-size: 2rem;
     line-height: 2.5rem;
     text-align: center;
   }
-  .pages .pages-bulletpoints h1 {
+  .pages .pages-bulletpoints h3 {
     font-size: 1rem;
   }
   .pages .pages-bulletpoints p {
@@ -480,7 +480,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  .features .features-info h1 {
+  .features .features-info h2 {
     font-size: 2rem;
     line-height: 2.5rem;
   }
@@ -495,12 +495,12 @@
   .pages .pages-image {
     display: none;
   }
-  .pages .pages-header h1 {
+  .pages .pages-header h2 {
     font-size: 2rem;
     line-height: 2.5rem;
     text-align: center;
   }
-  .pages .pages-bulletpoints h1 {
+  .pages .pages-bulletpoints h3 {
     font-size: 1rem;
   }
   .pages .pages-bulletpoints p {
@@ -520,7 +520,7 @@
   .statistics .stats-info {
     padding-bottom: 3rem;
   }
-  .statistics .stats-info h1 {
+  .statistics .stats-info h2 {
     font-size: 2rem;
     line-height: 2.5rem;
   }
@@ -543,7 +543,7 @@
   .blog .blog-info {
     padding-bottom: 3rem;
   }
-  .blog .blog-info h1 {
+  .blog .blog-info h2 {
     font-size: 2rem;
     line-height: 2.5rem;
   }
